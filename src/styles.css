@@ -123,6 +123,9 @@
 	/* Header Height */
 	--HeaderHeight: 3.5rem;
 
+	/* Status bar Height */
+	/* --StatusBarHeight: 4.5rem; */
+
 	/* LeftSides Height */
 	--DokuListsHeight: calc(100vh - var(--HeaderHeight));
 
@@ -160,10 +163,14 @@ html.dark {
 
 body {
 	font-family: JetBrains;
-	@apply flex items-center justify-center
+	@apply h-screen w-screen overflow-hidden flex items-center justify-center
 	/* Dynamic Border based on vars */
 	/* border-4 border-solid border-[var(--LborderFavColor)] dark:border-[var(--borderFavColor)] */
-
 	/* Static Border */
-	border-2 border-solid border-gray-800 border-opacity-25 bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] h-screen w-screen overflow-hidden;
+	/* border-2 border-solid border-gray-800 border-opacity-25 */
+	bg-[var(--LTheme4)] dark:bg-[var(--Theme4)];
+}
+
+#app {
+	@apply h-full w-full;
 }

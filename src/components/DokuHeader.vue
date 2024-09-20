@@ -32,7 +32,8 @@ function MT_toggleMode() {
 		console.log("light");
 	}
 };
-
+MT_toggleMode();
+// the selected color
 let LiColorActive = ref<number>(1);
 
 let rootElement = document.querySelector(":root") as HTMLElement;
