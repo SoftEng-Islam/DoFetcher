@@ -172,5 +172,5 @@ body {
 }
 
 #app {
-	@apply h-full w-full;
+	@apply h-screen w-screen overflow-hidden flex flex-col;
 }

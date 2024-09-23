@@ -4,7 +4,7 @@ import { ref } from 'vue';
 
 
 // vars
-let ProjectName = ref<String>('confArch');
+let ProjectName = ref<String>('DoFetcher');
 
 
 function minimize(): void {
