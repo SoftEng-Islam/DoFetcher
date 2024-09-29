@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 // import xterm from './xterm.vue';
 let statusbarActiveTab = ref<number>(0);
 function setActiveTab(tab: number): void {
