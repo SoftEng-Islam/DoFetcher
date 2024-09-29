@@ -12,8 +12,6 @@ import AppContent from "./components/AppContent.vue";
 <AppPreloader/>
 <AddNewWarn/>
 <AppHeader/>
-//- <TagsBar/>
 <DownloadsTable/>
-<AppContent/>
 <StatusBar/>
 </template>
