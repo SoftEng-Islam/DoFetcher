@@ -11,12 +11,6 @@ importers:
       '@tauri-apps/api':
         specifier: ^1
         version: 1.6.0
-      ag-grid-community:
-        specifier: ^32.2.1
-        version: 32.2.1
-      ag-grid-vue3:
-        specifier: ^32.2.1
-        version: 32.2.1(typescript@5.6.2)
       perfect-scrollbar:
         specifier: ^1.5.5
         version: 1.5.5
@@ -537,15 +531,6 @@ packages:
     resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-
-  ag-charts-types@10.2.0:
-    resolution: {integrity: sha512-PUqH1QtugpYLnlbMdeSZVf5PpT1XZVsP69qN1JXhetLtQpVC28zaj7ikwu9CMA9N9b+dBboA9QcjUQUJZVUokQ==}
-
-  ag-grid-community@32.2.1:
-    resolution: {integrity: sha512-mrnm1DnLI9Wd408mMwP+6p7lbTC3FYgzNIUPygBvNh3SzZnbzTEUJF/BTKXi+MARWtG5S0IMUYy4hqBiLbobaQ==}
-
-  ag-grid-vue3@32.2.1:
-    resolution: {integrity: sha512-QifBXEuhl9qH27QlefuF9zNBqZAn9UIf1BBBYgmkw9dhdr+yDVlnkyDlT2vsEJOnuCAAHl9RAm4DrBOQQJL8bA==}
 
   animate.css@4.1.1:
     resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
@@ -1670,19 +1655,6 @@ snapshots:
   '@vue/shared@3.5.10': {}
 
   acorn@7.4.1: {}
-
-  ag-charts-types@10.2.0: {}
-
-  ag-grid-community@32.2.1:
-    dependencies:
-      ag-charts-types: 10.2.0
-
-  ag-grid-vue3@32.2.1(typescript@5.6.2):
-    dependencies:
-      ag-grid-community: 32.2.1
-      vue: 3.5.10(typescript@5.6.2)
-    transitivePeerDependencies:
-      - typescript
 
   animate.css@4.1.1: {}
 

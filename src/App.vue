@@ -12,7 +12,7 @@ import AppContent from "./components/AppContent.vue";
 <AppPreloader/>
 <AddNewWarn/>
 <AppHeader/>
-<TagsBar/>
+//- <TagsBar/>
 <DownloadsTable/>
 <AppContent/>
 <StatusBar/>
