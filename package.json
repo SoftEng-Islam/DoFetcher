@@ -11,6 +11,8 @@
 	},
 	"dependencies": {
 		"@tauri-apps/api": "^1",
+		"ag-grid-community": "^32.2.1",
+		"ag-grid-vue3": "^32.2.1",
 		"perfect-scrollbar": "^1.5.5",
 		"vue": "^3.3.4",
 		"vue3-perfect-scrollbar": "^2.0.0"
