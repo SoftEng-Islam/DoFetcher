@@ -45,7 +45,7 @@ div(class="relative left-0 w-full h-full overflow-hidden bg-[var(--LTheme3)] dar
 	ul(class="w-full h-full p-4 pt-5 flex flex-col items-center justify-start gap-4 rounded-3xl rounded-b-none bg-[var(--LTheme2)] dark:bg-[var(--Theme2)]")
 		li(class="p-2 w-full h-24 flex items-center rounded-2xl bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] shadow-sm hover:shadow-xl")
 			//- Image & icon & type of the file
-			div(class="w-28 h-20 rounded-xl bg-[var(--LTheme1)] border border-gray-500")
+			div(class="w-28 h-20 rounded-xl bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] shadow-lg")
 			//- Container
 			div(class="w-full h-full ml-2 flex flex-col items-start justify-center overflow-hidden rounded-xl text-gray-500 dark:text-gray-300 dark:bg-[var(--Theme3)]")
 				//- Name[title]
