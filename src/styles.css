@@ -171,6 +171,11 @@ body {
 	bg-[var(--LTheme4)] dark:bg-[var(--Theme4)];
 }
 
+::selection {
+	@apply bg-[var(--Theme1)] text-[var(--LTheme1)] dark:bg-[var(--LTheme4)] dark:text-[var(--Theme1)];
+}
+
+
 #app {
 	@apply h-screen w-screen overflow-hidden flex flex-col;
 }
