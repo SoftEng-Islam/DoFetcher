@@ -54,8 +54,7 @@ div(class="relative left-0 w-full h-full overflow-hidden bg-[var(--LTheme3)] dar
 	ul(class="w-full h-full p-4 pt-5 flex flex-col items-center justify-start gap-4 rounded-3xl rounded-b-none bg-[var(--LTheme2)] dark:bg-[var(--Theme2)]")
 		li(class="relative p-2 w-full h-24 flex items-center rounded-2xl bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] shadow-sm hover:shadow-xl")
 			button(v-on:click="toggleSelect" type="button" class="fixed w-8 h-8 left-1 flex items-center justify-center rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
-				<i v-show="!DownList[0].selected" class="ri-checkbox-blank-circle-line ri-lg text-[var(--Theme4)] dark:text-[var(--LTheme4)]"></i>
-				<i v-show="DownList[0].selected" class="ri-checkbox-circle-line ri-xl text-[var(--Theme4)] dark:text-[var(--LTheme4)]"></i>
+				<i :class="DownList[0].selected? 'ri-checkbox-circle-line' : 'ri-checkbox-blank-circle-line' " class="ri-lg text-[var(--Theme4)] dark:text-[var(--LTheme4)]"></i>
 			//- Image & icon & type of the file
 			div(class="w-28 h-20 rounded-xl bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] shadow-lg ")
 			//- Container
@@ -71,7 +70,7 @@ div(class="relative left-0 w-full h-full overflow-hidden bg-[var(--LTheme3)] dar
 							span(class="text-red-500") /100%
 					//- speed
 					div(class="w-full h-full py-2 px-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] hover:shadow-md cursor-default select-none")
-						i(class="ri-speed-up-line ri-lg")
+						<i class="ri-rocket-2-line ri-lg"></i>
 					//- Size
 					div(class="w-full h-full py-2 px-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] hover:shadow-md cursor-default select-none")
 						i(class="ri-file-download-line ri-lg")
