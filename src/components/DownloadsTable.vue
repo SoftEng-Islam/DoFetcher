@@ -5,7 +5,7 @@ const DownList = ref([
 	{
 		name: "Harry Potter 1",
 		status: false,
-		progress:32,
+		progress: 100,
 		speed: 192,
 		size: 100,
 		added: "2024/9/15",
@@ -63,11 +63,16 @@ div(class="relative left-0 w-full h-full overflow-hidden bg-[var(--LTheme3)] dar
 				div(class="w-full pl-4 h-1/2 flex items-center bg-[var(--LTheme3)] dark:bg-[var(--Theme3)]")
 					h2(class="") {{DownList[0].name}}
 				div(class="w-full h-1/2 py-1 px-3 bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] flex items-center justify-between gap-2 select-none")
-					//- status
-					div(class="w-full h-full py-2 px-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] hover:shadow-md select-none")
-						span(class="mr-1 cursor-pointer" v-on:click="toggleStatus") #[i(class="ri-lg" :class="DownList[0].status? 'ri-play-line' : 'ri-pause-line' ")]
-						span(class="text-blue-500") {{DownList[0].progress}}
-							span(class="text-red-500") /100%
+					//- Status & Progress
+					div(class="relative overflow-hidden w-full h-full py-2 px-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] select-none" :class="DownList[0].progress == 100 ? 'outline-dotted outline-[var(--dark-fav-color)] dark:outline-[var(--light-fav-color)]' : 'border border-[var(--Theme4)] dark:border-[var(--LTheme1)]'")
+						span(class="absolute h-full left-0 top-0 bg-[var(--dark-fav-color)] dark:bg-[var(--light-fav-color)] opacity-40")
+						span(class="absolute left-2 cursor-pointer" v-on:click="toggleStatus")
+							i(v-if="DownList[0].progress < 100" class="ri-lg text-[var(--Theme4)] dark:text-[var(--LTheme4)]" :class="DownList[0].status? 'ri-play-line' : 'ri-pause-line' ")
+							i(v-if="DownList[0].progress == 100" class="ri-checkbox-circle-line ri-lg text-green-500")
+						span(class="absolute right-2 font-bold text-[var(--Theme4)] dark:text-[var(--LTheme4)]")
+							span(v-if="DownList[0].progress != 100") {{DownList[0].progress}}
+							span(v-if="DownList[0].progress != 100") class="text-purple-500") /
+							span(:class="DownList[0].progress != 100 ? 'text-red-500' : 'text-green-500'") 100%
 					//- speed
 					div(class="w-full h-full py-2 px-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] hover:shadow-md cursor-default select-none")
 						<i class="ri-rocket-2-line ri-lg"></i>

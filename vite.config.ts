@@ -1,15 +1,14 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+const options = { } // FIXME: pug pretty is deprecated!
+const locals = { name: "My Pug" }
 import pugPlugin from "vite-plugin-pug";
+import { transform } from "typescript";
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
-	plugins: [pugPlugin(), vue()],
-
-	// Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
-	//
-	// 1. prevent vite from obscuring rust errors
-	clearScreen: false,
+	plugins: [pugPlugin(options, locals), vue()],
+	clearScreen: false, // 1. prevent vite from obscuring rust errors
 	// 2. tauri expects a fixed port, fail if that port is not available
 	server: {
 		port: 1420,

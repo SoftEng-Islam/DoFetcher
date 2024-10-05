@@ -170,11 +170,13 @@ body {
 	/* border-2 border-solid border-gray-800 border-opacity-25 */
 	bg-[var(--LTheme4)] dark:bg-[var(--Theme4)];
 }
+button {
+	user-select: none;
+}
 
 ::selection {
 	@apply bg-[var(--Theme1)] text-[var(--LTheme1)] dark:bg-[var(--LTheme4)] dark:text-[var(--Theme1)];
 }
-
 
 #app {
 	@apply h-screen w-screen overflow-hidden flex flex-col;
