@@ -145,22 +145,22 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 
 	//- Settings
 	button(type="button", class="w-7 h-7 mx-2 rounded-full flex items-center justify-center bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
-		<i class="ri-settings-2-line ri-lg text-black dark:text-white animate__animated animate__heartBeat animate__infinite"></i>
+		<i class="ri-settings-2-line ri-lg text-black dark:text-white animate__animated animate__flash animate__infinite"></i>
 	//- Change App Colors and Theme
-	div(class="px-2 h-8 overflow-hidden rounded-full flex items-center justify-center gap-2 bg-[var(--Theme3)]")
-		button(type="button", @click="setColorTheme(1)" :class="LiColorActive === 1 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-gra)]")
-		button(type="button", @click="setColorTheme(2)" :class="LiColorActive === 2 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-pur)]")
-		button(type="button", @click="setColorTheme(3)" :class="LiColorActive === 3 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L-pin)]")
-		button(type="button", @click="setColorTheme(4)" :class="LiColorActive === 4 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L-blu)]")
-		button(type="button", @click="setColorTheme(5)" :class="LiColorActive === 5 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L-gre)]")
-		button(type="button", @click="setColorTheme(6)" :class="LiColorActive === 6 ? 'scale-125 mx-2': ''" class="w-5 h-5 rounded-full cursor-pointer hover:scale-90 duration-150	bg-[var(--L-yel)]")
+	div(class="px-2 h-8 overflow-hidden rounded-full flex items-center justify-center gap-2 bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
+		button(type="button", @click="setColorTheme(1)" :class="LiColorActive === 1 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--D-gra)] dark:bg-[var(--L-gra)]")
+		button(type="button", @click="setColorTheme(2)" :class="LiColorActive === 2 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-pur)] ")
+		button(type="button", @click="setColorTheme(3)" :class="LiColorActive === 3 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-pin)] ")
+		button(type="button", @click="setColorTheme(4)" :class="LiColorActive === 4 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-blu)] ")
+		button(type="button", @click="setColorTheme(5)" :class="LiColorActive === 5 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-gre)] ")
+		button(type="button", @click="setColorTheme(6)" :class="LiColorActive === 6 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-yel)] ")
 
 	//- Dark / Light Button
-	div(class="toggleMode h-7 w-16 mx-3 flex flex-row items-center justify-center rounded-full bg-[var(--Theme4)] scale-95" @click="darkModeChecked = !darkModeChecked; MT_toggleMode();")
+	div(class="toggleMode h-7 w-16 mx-3 flex flex-row items-center justify-center rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] scale-95 shadow-lg shadow-yellow-300 dark:shadow-purple-950" @click="darkModeChecked = !darkModeChecked; MT_toggleMode();")
 		input(type="checkbox" :checked="darkModeChecked")
 		label(for="darkmode-toggle")
-			<i class="sun pl-[3px] ri-sun-fill ri-xl text-white"></i>
-			<i class="moon ri-moon-fill pb-[1px] ri-xl text-white"></i>
+			<i class="sun pl-[3px] ri-sun-fill ri-xl text-yellow-100"></i>
+			<i class="moon ri-moon-fill pb-[1px] ri-xl text-gray-500 dark:text-gray-300"></i>
 	//- titlebar buttons
 	div(class="flex items-center justify-center gap-2 ml-4")
 		button(type="button" @click="minimize" class="w-6 h-6 flex items-center justify-center rounded-md cursor-pointer hover:opacity-50 bg-yellow-500")
