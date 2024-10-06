@@ -156,7 +156,7 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 		button(type="button", @click="setColorTheme(6)" :class="LiColorActive === 6 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-yel)] ")
 
 	//- Dark / Light Button
-	div(class="toggleMode h-7 w-16 mx-3 flex flex-row items-center justify-center rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] scale-95 shadow-lg shadow-yellow-300 dark:shadow-purple-950" @click="darkModeChecked = !darkModeChecked; MT_toggleMode();")
+	div(class="toggleMode h-8 w-16 mx-3 flex flex-row items-center justify-center rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] scale-95" @click="darkModeChecked = !darkModeChecked; MT_toggleMode();")
 		input(type="checkbox" :checked="darkModeChecked")
 		label(for="darkmode-toggle")
 			<i class="sun pl-[3px] ri-sun-fill ri-xl text-yellow-100"></i>
@@ -176,14 +176,14 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 		@apply w-0 h-0;
 		visibility: hidden;
 
-		&:checked + label {
-			@apply bg-[var(--Theme4)];
-		}
+		// &:checked + label {
+			// @apply bg-[var(--Theme4)];
+		// }
 
 		&:checked + label:after {
 			@apply left-full;
 			transform: translateX(-100%);
-			background: linear-gradient(180deg, #868686, #8d5eb9);
+			background: linear-gradient(20deg, #000000, #7500e2);
 		}
 
 		&:checked + label i.sun {
@@ -223,4 +223,3 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 	}
 }
 </style>
-export default { }
