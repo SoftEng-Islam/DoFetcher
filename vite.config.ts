@@ -1,13 +1,17 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-const options = { } // FIXME: pug pretty is deprecated!
-const locals = { name: "My Pug" }
-import pugPlugin from "vite-plugin-pug";
-import { transform } from "typescript";
+import vuePugPlugin from "vite-plugin-pug";
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
-	plugins: [pugPlugin(options, locals), vue()],
+	plugins: [vue({
+		template: {
+			preprocessOptions: {
+				// 'preprocessOptions' is passed through to the pug compiler
+				plugins: [vuePugPlugin],
+			},
+		},
+	})],
 	clearScreen: false, // 1. prevent vite from obscuring rust errors
 	// 2. tauri expects a fixed port, fail if that port is not available
 	server: {
