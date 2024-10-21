@@ -12,7 +12,7 @@ onMounted(() => {
 	// Simulate loading process (replace with actual async call)
 	setTimeout(() => {
 		isLoading.value = false;
-	}, 4000);
+	}, 4500);
 });
 </script>
 
