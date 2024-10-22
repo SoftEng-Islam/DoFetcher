@@ -1,8 +1,14 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import DownloadTask from './DownloadTask.vue';
-const TableHead = [["All","Videos","Porn"], "Name", "Status", "Speed", "Size", "Added"];
-
+import { ref } from "vue";
+import DownloadTask from "./DownloadTask.vue";
+const TableHead = [
+	["All", "Videos", "Porn"],
+	"Name",
+	"Status",
+	"Speed",
+	"Size",
+	"Added",
+];
 </script>
 <template lang="pug">
 //- Top Header [Type| Name | Status | Speed | Size | Added]

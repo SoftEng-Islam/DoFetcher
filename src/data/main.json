@@ -1,0 +1,21 @@
+{
+	"ApplicationName": "DoFetcher",
+	"ApplicationColor": "Purple",
+	"ApplicationMode": "Dark",
+	"OS": "Linux",
+	"DisplayManager": "GDM",
+	"CurrentDownloadList": [
+		{
+			"Name": "download one",
+			"Type": "video",
+			"URL": "https://www.youtube.com/SomeVideo",
+			"thumbnail": "base64",
+			"Path": "/data/myDonwloads/someVideo.mp4",
+			"Domain": "youtube.com",
+			"Size": "1000MB",
+			"Progress": 90,
+			"Status": "Completed",
+			"Added": "2024/12/5,12:5:30"
+		}
+	]
+}
