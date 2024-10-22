@@ -1,10 +1,5 @@
 {
-	"ApplicationName": "DoFetcher",
-	"ApplicationColor": "Purple",
-	"ApplicationMode": "Dark",
-	"OS": "Linux",
-	"DisplayManager": "GDM",
-	"CurrentDownloadList": [
+	"DownloadsList": [
 		{
 			"Name": "download one",
 			"Type": "video",
