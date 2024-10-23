@@ -12,6 +12,7 @@
 	"dependencies": {
 		"@tauri-apps/api": "^1",
 		"perfect-scrollbar": "^1.5.5",
+		"tippy.js": "^6.3.7",
 		"vue": "^3.3.4",
 		"vue3-perfect-scrollbar": "^2.0.0"
 	},
@@ -37,6 +38,7 @@
 		"vite": "^5.3.1",
 		"vite-plugin-pug": "^0.3.2",
 		"vue-pug-plugin": "^2.0.3",
+		"vue-tippy": "^6.4.4",
 		"vue-tsc": "^2.0.22"
 	}
 }

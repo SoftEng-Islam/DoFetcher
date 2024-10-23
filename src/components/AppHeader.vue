@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { appWindow } from "@tauri-apps/api/window";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import { invoke } from "@tauri-apps/api";
+const settings = ref({});
 
 // vars
 let ProjectName = ref<String>("DoFetcher");
@@ -141,7 +143,7 @@ function setColorTheme(color: number): void {
 //- Our Header
 header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex items-center px-4 bg-[var(--LTheme1)] dark:bg-[var(--Theme1)]" data-tauri-drag-region style="user-select: none;")
 	//- App Name or The Logo
-	h1(class="text-black dark:text-white font-bold mr-auto") {{ ProjectName }}
+	h1(class="text-black dark:text-white font-bold mr-auto" v-tippy="{ content: ProjectName }") {{ ProjectName }}
 
 	//- Settings
 	button(type="button", class="w-7 h-7 mx-2 rounded-full flex items-center justify-center bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
@@ -177,7 +179,7 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 		visibility: hidden;
 
 		// &:checked + label {
-			// @apply bg-[var(--Theme4)];
+		// @apply bg-[var(--Theme4)];
 		// }
 
 		&:checked + label:after {

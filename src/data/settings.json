@@ -1,10 +1,10 @@
 {
-	"ApplicationName": "DoFetcher",
-	"ApplicationColor": "Purple",
-	"ApplicationMode": "Dark",
+	"AppName": "DoFetcher",
+	"AppColor": "Purple",
+	"AppMode": "Dark",
 	"OS": {
-		"name": "linux",
-		"displayManager": "GDM",
-		"environement": "Hyprland"
+		"Name": "Arch",
+		"DisplayManager": "GDM",
+		"Environement": "Hyprland"
 	}
 }
