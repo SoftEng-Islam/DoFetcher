@@ -7,7 +7,7 @@ const toggleSelectAll = () => {
 //- Functions Box [Download,Resume,Puse,Remove,Move]
 div(class="w-full h-16 p-4 flex items-center justify-center bg-[var(--LTheme2)] dark:bg-[var(--Theme2)]")
 	ul(class="w-full flex items-center gap-4 text-gray-400")
-		li(class="w-8 h-8 bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] rounded-md flex items-center justify-center")
+		li(v-tippy="{content: 'Select All'}" class="w-8 h-8 bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] rounded-md flex items-center justify-center")
 			<i class="ri-checkbox-blank-circle-line ri-lg"></i>
 			<i v-show="false" class="ri-checkbox-circle-line ri-lg"></i>
 		li(class="w-8 h-8 bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] rounded-md flex items-center justify-center")
