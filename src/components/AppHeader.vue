@@ -146,8 +146,8 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 	h1(class="text-black dark:text-white font-bold mr-auto" v-tippy="{ content: ProjectName }") {{ ProjectName }}
 
 	//- Settings
-	button(type="button", class="w-7 h-7 mx-2 rounded-full flex items-center justify-center bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
-		<i class="ri-settings-2-line ri-lg text-black dark:text-white animate__animated animate__flash animate__infinite"></i>
+	button(type="button", v-tippy="{content: 'Settings'}" class="w-7 h-7 mx-2 rounded-full flex items-center justify-center bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
+		<i class="ri-settings-2-line ri-lg text-black dark:text-white"></i>
 	//- Change App Colors and Theme
 	div(class="px-2 h-8 overflow-hidden rounded-full flex items-center justify-center gap-2 bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
 		button(type="button", @click="setColorTheme(1)" :class="LiColorActive === 1 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--D-gra)] dark:bg-[var(--L-gra)]")

@@ -15,11 +15,13 @@ export default defineConfig(async () => ({
 	clearScreen: false, // 1. prevent vite from obscuring rust errors
 	// 2. tauri expects a fixed port, fail if that port is not available
 	server: {
+		hot: true,
 		port: 1420,
 		strictPort: true,
 		watch: {
 			// 3. tell vite to ignore watching `src-tauri`
 			ignored: ["**/src-tauri/**"],
+			include: ['src/**/*.vue', 'src/**/*.ts'] // or other paths you need
 		},
 	},
 }));
