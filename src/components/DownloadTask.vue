@@ -20,15 +20,15 @@ const toggleSelect = () => {
 
 </script>
 <template lang="pug">
-li(class="relative p-3 w-full h-28 flex items-center rounded-2xl border-2 border-[var(--borderFavColor)] dark:border-[var(--LborderFavColor)] bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] shadow-sm hover:shadow-xl")
-	button(v-tippy="{content: 'Select'}" v-on:click="toggleSelect" type="button" class="fixed w-8 h-8 left-1 flex items-center justify-center rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
+li(class="relative p-2 w-full h-28 flex items-center rounded-2xl bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] shadow-sm hover:shadow-xl overflow-hidden")
+	button(v-tippy="{content: 'Select'}" v-on:click="toggleSelect" type="button" class="absolute w-9 h-9 left-[-1.1rem] flex items-center justify-center rounded-full")
 		//- <i :class="DownList[0].selected? 'ri-checkbox-circle-line' : 'ri-checkbox-blank-circle-line' " class="ri-lg text-[var(--Theme4)] dark:text-[var(--LTheme4)]"></i>
 	//- Image & icon & type of the file
-	div(class="w-28 h-20 rounded-xl bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] shadow-lg ")
+	div(class="w-32 h-full rounded-xl bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] shadow-lg ")
 	//- Container
-	div(class="w-full h-20 ml-2 flex flex-col items-start justify-center overflow-hidden rounded-xl text-gray-500 dark:text-gray-300 dark:bg-[var(--Theme3)]")
+	div(class="text-sm w-full h-full ml-2 flex flex-col items-start justify-center overflow-hidden rounded-xl text-gray-500 dark:text-gray-300 dark:bg-[var(--Theme3)]")
 		//- Name[title]
-		div(class="w-full pl-4 h-1/2 flex items-center bg-[var(--LTheme3)] dark:bg-[var(--Theme3)]")
+		div(class="text-ellipsis w-full pl-4 h-1/2 flex items-center bg-[var(--LTheme3)] dark:bg-[var(--Theme3)]")
 			h2(class="") {{DownList[0].name}}
 		div(class="w-full h-1/2 py-1 px-3 bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] flex items-center justify-between gap-2 select-none")
 			//- Status & Progress
