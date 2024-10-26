@@ -7,8 +7,9 @@ import "animate.css";
 import "remixicon/fonts/remixicon.css";
 
 // Minimalistic but perfect custom scrollbar plugin
-import { PerfectScrollbar } from "vue3-perfect-scrollbar";
-import "./styles/PerfectScrollbar.css";
+import { PerfectScrollbarPlugin } from 'vue3-perfect-scrollbar';
+import 'vue3-perfect-scrollbar/style.css';
+
 
 import VueTippy from "vue-tippy";
 import "tippy.js/dist/tippy.css"; // optional for styling
@@ -23,6 +24,7 @@ createApp(App)
 		defaultProps: {
 			placement: "auto-end",
 			allowHTML: true,
-		}, // => Global default options * see all props
+		}, // => Global default options * ssee all props
 	})
+	.use(PerfectScrollbarPlugin)
 	.mount("#app");

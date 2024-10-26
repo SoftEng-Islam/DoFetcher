@@ -21,6 +21,15 @@ ul(class="w-full h-10 p-2 px-4 flex gap-2 items-center justify-around text-gray-
 	li(class="w-full flex justify-center rounded-lg font-bold text-[var(--Theme1)] dark:text-[var(--LTheme1)] bg-[var(--LTheme2)] dark:bg-[var(--Theme2)]") {{TableHead[5]}}
 div(class="relative left-0 w-full h-full overflow-hidden bg-[var(--LTheme3)] dark:bg-[var(--Theme3)]")
 	//- Download list
-	ul(class="w-full h-full p-5 pt-5 flex flex-col items-center justify-start gap-4 rounded-3xl rounded-b-none bg-[var(--LTheme2)] dark:bg-[var(--Theme2)]")
-		<DownloadTask/>
+	PerfectScrollbar(class="h-full w-full")
+		ul(class="w-full h-90% p-5 pt-5 flex flex-col items-center justify-start gap-4 rounded-3xl rounded-b-none bg-[var(--LTheme2)] dark:bg-[var(--Theme2)]")
+			<DownloadTask/>
+			<DownloadTask/>
+			<DownloadTask/>
+			<DownloadTask/>
+			<DownloadTask/>
+			<DownloadTask/>
+			<DownloadTask/>
+			<DownloadTask/>
+			<DownloadTask/>
 </template>

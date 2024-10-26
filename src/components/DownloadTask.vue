@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 const DownList = ref([
 	{
 		name: "Harry Potter 1",
@@ -8,7 +8,7 @@ const DownList = ref([
 		speed: 192,
 		size: 100,
 		added: "2024/9/15",
-		selected: true
+		selected: true,
 	},
 ]);
 const toggleStatus = () => {
@@ -17,7 +17,6 @@ const toggleStatus = () => {
 const toggleSelect = () => {
 	DownList.value[0].selected = !DownList.value[0].selected;
 };
-
 </script>
 <template lang="pug">
 li(class="relative p-2 w-full h-28 flex items-center rounded-2xl bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] shadow-sm hover:shadow-xl overflow-hidden")
@@ -28,11 +27,11 @@ li(class="relative p-2 w-full h-28 flex items-center rounded-2xl bg-[var(--LThem
 	//- Container
 	div(class="text-sm w-full h-full ml-2 flex flex-col items-start justify-center overflow-hidden rounded-xl text-gray-500 dark:text-gray-300 dark:bg-[var(--Theme3)]")
 		//- Name[title]
-		div(class="text-ellipsis w-full pl-4 h-1/2 flex items-center bg-[var(--LTheme3)] dark:bg-[var(--Theme3)]")
-			h2(class="") {{DownList[0].name}}
-		div(class="w-full h-1/2 py-1 px-3 bg-[var(--LTheme3)] dark:bg-[var(--Theme3)] flex items-center justify-between gap-2 select-none")
+		div(class="w-full h-1/2 p-2 flex items-center text-ellipsis bg-[var(--LTheme3)] dark:bg-[var(--Theme3)]")
+			h2(class="w-full rounded-lg h-full p-1 px-2 text-left overflow-hidden bg-[var(--Theme4)]") {{DownList[0].name}}
+		div(class="w-full h-1/2 p-2 flex items-center justify-between gap-x-2 select-none bg-[var(--LTheme3)] dark:bg-[var(--Theme3)]")
 			//- Status & Progress
-			div(class="relative overflow-hidden w-full h-full py-2 px-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] select-none" :class="DownList[0].progress == 100 ? '' : ''")
+			div(class="relative overflow-hidden w-full h-full p-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] select-none" :class="DownList[0].progress == 100 ? '' : ''")
 				span(class="absolute h-full left-0 top-0 bg-[var(--dark-fav-color)] dark:bg-[var(--light-fav-color)] opacity-40")
 				span(class="absolute left-2 cursor-pointer" v-on:click="toggleStatus")
 					i(v-if="DownList[0].progress < 100" class="ri-lg text-[var(--Theme4)] dark:text-[var(--LTheme4)]" :class="DownList[0].status? 'ri-play-line' : 'ri-pause-line' ")
@@ -42,12 +41,12 @@ li(class="relative p-2 w-full h-28 flex items-center rounded-2xl bg-[var(--LThem
 					span(v-if="DownList[0].progress != 100") class="text-purple-500") /
 					span(:class="DownList[0].progress != 100 ? 'text-red-500' : 'text-green-500'") 100%
 			//- speed
-			div(class="w-full h-full py-2 px-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] hover:shadow-md cursor-default select-none")
+			div(class="w-full h-full p-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] hover:shadow-md cursor-default select-none")
 				<i class="ri-rocket-2-line ri-lg"></i>
 			//- Size
-			div(class="w-full h-full py-2 px-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] hover:shadow-md cursor-default select-none")
+			div(class="w-full h-full p-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] hover:shadow-md cursor-default select-none")
 				i(class="ri-file-download-line ri-lg")
 			//- Added
-			div(class="w-full h-full py-2 px-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] hover:shadow-md cursor-default select-none")
+			div(class="w-full h-full p-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] hover:shadow-md cursor-default select-none")
 				i(class="ri-time-line ri-lg")
 </template>
