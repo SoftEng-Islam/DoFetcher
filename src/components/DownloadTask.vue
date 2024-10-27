@@ -28,7 +28,7 @@ li(class="relative p-2 w-full h-28 flex items-center rounded-2xl bg-[var(--LThem
 	div(class="text-sm w-full h-full ml-2 flex flex-col items-start justify-center overflow-hidden rounded-xl text-gray-500 dark:text-gray-300 dark:bg-[var(--Theme3)]")
 		//- Name[title]
 		div(class="w-full h-1/2 p-2 flex items-center text-ellipsis bg-[var(--LTheme3)] dark:bg-[var(--Theme3)]")
-			h2(class="w-full rounded-lg h-full p-1 px-2 text-left overflow-hidden bg-[var(--Theme4)]") {{DownList[0].name}}
+			h2(class="w-full rounded-lg h-full p-1 px-2 text-left overflow-hidden bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]") {{DownList[0].name}}
 		div(class="w-full h-1/2 p-2 flex items-center justify-between gap-x-2 select-none bg-[var(--LTheme3)] dark:bg-[var(--Theme3)]")
 			//- Status & Progress
 			div(class="relative overflow-hidden w-full h-full p-4 flex items-center justify-between rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] select-none" :class="DownList[0].progress == 100 ? '' : ''")
