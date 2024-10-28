@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink, RouterView } from "vue-router";
 import { ref, onMounted } from "vue";
 import AppPreloader from "./components/AppPreloader.vue";
 import AppHeader from "./components/AppHeader.vue";
@@ -21,7 +22,8 @@ onMounted(() => {
 div(v-if="!isLoading" class="h-full w-full")
 	<AddNewWarn/>
 	<AppHeader/>
-	<FunctionBox/>
-	<DownloadsTable/>
-	<StatusBar/>
-	</template>
+	<RouterView />
+		<FunctionBox/>
+		<DownloadsTable/>
+		<StatusBar/>
+</template>
