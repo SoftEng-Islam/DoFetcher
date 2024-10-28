@@ -147,7 +147,7 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 
 	//- Settings
 	button(type="button", v-tippy="{content: 'Settings'}" class="w-7 h-7 mx-2 rounded-full flex items-center justify-center bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
-		<RouterLink to="/settings" />
+		<RouterLink to="/Settings" />
 			<i class="ri-settings-2-line ri-lg text-black dark:text-white"></i>
 	//- Change App Colors and Theme
 	div(class="px-2 h-8 overflow-hidden rounded-full flex items-center justify-center gap-2 bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
