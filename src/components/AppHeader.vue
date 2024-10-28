@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from "vue-router";
 import { appWindow } from "@tauri-apps/api/window";
 import { ref, onMounted } from "vue";
 import { invoke } from "@tauri-apps/api";

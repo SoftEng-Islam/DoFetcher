@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
+import { RouterView } from "vue-router";
 import { ref, onMounted } from "vue";
 import AppPreloader from "./components/AppPreloader.vue";
 import AppHeader from "./components/AppHeader.vue";
