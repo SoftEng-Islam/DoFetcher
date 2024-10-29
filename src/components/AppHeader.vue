@@ -146,7 +146,6 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 	//- App Name or The Logo
 	h1(class="text-black dark:text-white font-bold mr-auto" v-tippy="{ content: ProjectName }")
 		RouterLink(to="/") {{ ProjectName }}
-
 	//- Settings
 	button(type="button", v-tippy="{content: 'Settings'}" class="w-7 h-7 mx-2 rounded-full flex items-center justify-center bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
 		RouterLink(to="/Settings")
