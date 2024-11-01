@@ -6,5 +6,13 @@
 		"Name": "Arch",
 		"DisplayManager": "GDM",
 		"Environement": "Hyprland"
-	}
+	},
+	"WhenStartup": {
+		"ResumeAll": true,
+		"CheckUpdates": true,
+		"Torrent": {
+			"ResumeAllTorrents": true
+		}
+	},
+	"AfterFinishdAllDownloads": "shutdown"
 }

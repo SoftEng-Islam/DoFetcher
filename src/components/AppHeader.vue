@@ -11,7 +11,6 @@ let ProjectName = ref<String>("DoFetcher");
 function minimize(): void {
 	appWindow.minimize();
 }
-
 async function maximize() {
 	await appWindow.toggleMaximize();
 }
