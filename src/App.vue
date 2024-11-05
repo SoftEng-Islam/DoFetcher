@@ -15,7 +15,7 @@ onMounted(() => {
 
 <template lang="pug">
 <AppPreloader :isLoading="isLoading" />
-div(v-if="!isLoading" class="h-full w-full")
+div(class="h-full w-full" :class="isLoading == true ? 'blur-lg':''")
 	<AppHeader/>
 	<RouterView />
 </template>

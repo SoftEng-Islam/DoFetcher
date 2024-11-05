@@ -7,7 +7,7 @@ defineProps({
 });
 </script>
 <template lang="pug">
-div(v-if="isLoading" class="preloader")
+div(v-if="isLoading" class="preloader fixed flex items-center justify-center top-0 left-0 w-full h-full z-50 bg-gradient-to-r from-black-700/40 to-gray-700/30")
 	.upload.loading
 		.path
 			.arrow
@@ -31,18 +31,6 @@ $backWave: #6930fa;
 $frontWave: #9941fe;
 $border: $frontWave;
 $borderActive: #fff;
-.preloader {
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
-	z-index: 1000;
-}
 .upload {
 	position: relative;
 	width: 66px;
