@@ -23,9 +23,9 @@ export default {
 		extend: {},
 	},
 	plugins: [
-		require("@tailwindcss/typography"),
-		require("@tailwindcss/forms"),
-		require("@tailwindcss/aspect-ratio"),
-		require("@tailwindcss/container-queries"),
+		import("@tailwindcss/typography"),
+		import("@tailwindcss/forms"),
+		import("@tailwindcss/aspect-ratio"),
+		import("@tailwindcss/container-queries"),
 	],
 };
