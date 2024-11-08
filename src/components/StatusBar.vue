@@ -8,9 +8,9 @@ function setActiveTab(tab: number): void {
 }
 </script>
 <template lang="pug">
-div(class="fixed bottom-0 h-auto w-full flex flex-col item-center justify-center bg-[var(--LTheme2)] dark:bg-[var(--Theme2)] text-green-300 ")
+div(class="fixed bottom-0 h-auto w-full flex flex-col item-center justify-center bg-[var(--LTheme1)] dark:bg-[var(--Theme1)] text-green-300 ")
 	//- The Head of bottom status bar
-	ul(class="w-full h-8 flex items-center justify-start p-4")
+	ul(class="w-full h-9 flex items-center justify-start p-4")
 		//- Status Tab
 		li(v-show="true" class="flex items-center h-8 p-3 text-white dark:text-white hover:opacity-100 rounded-t-lg border-b-4 border-2 hover:cursor-pointer" :class="statusbarActiveTab === 1 ? 'opacity-100 border-[var(--light-fav-color)] dark:border-[var(--dark-fav-color)] border-b-4': 'opacity-50 border-transparent'")
 			button(type="button" @click="setActiveTab(1)") Status
