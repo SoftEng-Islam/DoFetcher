@@ -148,13 +148,13 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 		RouterLink(to="/Settings")
 			<i class="ri-settings-2-line ri-lg text-black dark:text-white"></i>
 	//- Change App Colors and Theme
-	div(class="px-2 h-8 overflow-hidden rounded-full flex items-center justify-center gap-2 bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
-		button(type="button", @click="setColorTheme(1)" :class="LiColorActive === 1 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--D-gra)] dark:bg-[var(--L-gra)]")
-		button(type="button", @click="setColorTheme(2)" :class="LiColorActive === 2 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-pur)] ")
-		button(type="button", @click="setColorTheme(3)" :class="LiColorActive === 3 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-pin)] ")
-		button(type="button", @click="setColorTheme(4)" :class="LiColorActive === 4 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-blu)] ")
-		button(type="button", @click="setColorTheme(5)" :class="LiColorActive === 5 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-gre)] ")
-		button(type="button", @click="setColorTheme(6)" :class="LiColorActive === 6 ? 'scale-125 mx-2': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-[var(--L-yel)] ")
+	div(class="px-2 h-8 overflow-hidden rounded-full flex items-center justify-center gap-x-2 bg-[var(--LTheme4)] dark:bg-[var(--Theme4)]")
+		button(type="button", @click="setColorTheme(1)" :class="LiColorActive === 1 ? 'scale-110 mx-1': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-gradient-to-r from-[var(--L-gra)] to-gray-950/70")
+		button(type="button", @click="setColorTheme(2)" :class="LiColorActive === 2 ? 'scale-110 mx-1': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-gradient-to-r from-[var(--L-pur)] to-gray-950/70")
+		button(type="button", @click="setColorTheme(3)" :class="LiColorActive === 3 ? 'scale-110 mx-1': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-gradient-to-r from-[var(--L-pin)] to-gray-950/70")
+		button(type="button", @click="setColorTheme(4)" :class="LiColorActive === 4 ? 'scale-110 mx-1': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-gradient-to-r from-[var(--L-blu)] to-gray-950/70")
+		button(type="button", @click="setColorTheme(5)" :class="LiColorActive === 5 ? 'scale-110 mx-1': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-gradient-to-r from-[var(--L-gre)] to-gray-950/70")
+		button(type="button", @click="setColorTheme(6)" :class="LiColorActive === 6 ? 'scale-110 mx-1': ''" class="w-5 h-5 shadow-md rounded-full cursor-pointer hover:scale-90 duration-150 bg-gradient-to-r from-[var(--L-yel)] to-gray-950/70")
 
 	//- Dark / Light Button
 	div(class="toggleMode h-8 w-16 mx-3 flex flex-row items-center justify-center rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] scale-95" @click="darkModeChecked = !darkModeChecked; MT_toggleMode();")
