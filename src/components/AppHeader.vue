@@ -160,7 +160,7 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 	div(class="toggleMode h-8 w-16 mx-3 flex flex-row items-center justify-center rounded-full bg-[var(--LTheme4)] dark:bg-[var(--Theme4)] scale-95" @click="darkModeChecked = !darkModeChecked; MT_toggleMode();")
 		input(type="checkbox" :checked="darkModeChecked")
 		label(for="darkmode-toggle")
-			<i class="sun pl-[3px] ri-sun-fill ri-xl text-yellow-100"></i>
+			<i class="sun pl-[0.25rem] ri-sun-fill ri-xl text-yellow-100 shadow-lg"></i>
 			<i class="moon ri-moon-fill pb-[1px] ri-xl text-gray-500 dark:text-gray-300"></i>
 	//- titlebar buttons
 	div(class="flex items-center justify-center gap-2 ml-4")
@@ -202,7 +202,7 @@ header(class="overflow-hidden w-full top-0 left-0 h-[var(--HeaderHeight)] flex i
 		&:after {
 			content: "";
 			@apply w-8 h-8 absolute left-0 rounded-full duration-300;
-			background: linear-gradient(180deg, #ffcc89, #c3790c);
+			background: linear-gradient(180deg, #fdff98, #c97900);
 			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 		}
 
