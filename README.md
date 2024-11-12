@@ -20,7 +20,7 @@ A Cross Platform Downloader Application.
 
 ```shell
     pnpm install
-    pnpm run dev
+    pnpm run tauri dev
 ```
 
 ## Tauri + Vue + TypeScript
