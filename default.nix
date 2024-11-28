@@ -5,6 +5,8 @@ pkgs.mkShell {
 	nativeBuildInputs = with pkgs; [
 		pkg-config
 		gobject-introspection
+		rustup
+		rust-analyzer
 		cargo
 		cargo-tauri
 		nodejs
@@ -19,7 +21,6 @@ pkgs.mkShell {
 		gtk3
 		harfbuzz
 		librsvg
-		libsoup
 		libsoup_3
 		pango
 		webkitgtk
