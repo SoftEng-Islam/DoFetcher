@@ -2,6 +2,14 @@
 
 A Cross Platform Downloader Application.
 
+
+![image](https://github.com/user-attachments/assets/7856ed13-bac7-4ff1-80c2-1d94141a7881)
+![image](https://github.com/user-attachments/assets/539cf33d-41e0-4878-8e4d-b37c7e5b12b9)
+![image](https://github.com/user-attachments/assets/47a2b700-190f-4e7c-80dd-7dea5c172b1d)
+![image](https://github.com/user-attachments/assets/401fdf22-dc50-44be-a363-c901749a5b86)
+
+
+
 ## Tools & languages & frameworks that used
 
 - Rust - Programming Language
