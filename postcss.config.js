@@ -1,6 +1,4 @@
-export default {
-	plugins: {
-		tailwindcss: {},
-		autoprefixer: {},
-	},
-};
+export const plugins = [
+	import('tailwindcss'),
+	import('autoprefixer')
+];

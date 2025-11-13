@@ -2,7 +2,7 @@
 import { ref, onMounted } from "vue";
 import { Terminal } from "@xterm/xterm";
 import "@xterm/xterm/css/xterm.css";
-import { invoke } from "@tauri-apps/api/tauri";
+import { invoke } from "@tauri-apps/api/core";
 
 // Create a reference for the terminal container
 const terminalRef = ref<HTMLElement | null>(null);

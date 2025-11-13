@@ -8,9 +8,8 @@ import "animate.css";
 import "remixicon/fonts/remixicon.css";
 
 // Minimalistic but perfect custom scrollbar plugin
-import { PerfectScrollbarPlugin } from 'vue3-perfect-scrollbar';
-import 'vue3-perfect-scrollbar/style.css';
-
+import { PerfectScrollbarPlugin } from "vue3-perfect-scrollbar";
+import "vue3-perfect-scrollbar/style.css";
 
 import VueTippy from "vue-tippy";
 import "tippy.js/dist/tippy.css"; // optional for styling

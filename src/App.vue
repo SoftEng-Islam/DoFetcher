@@ -17,5 +17,5 @@ onMounted(() => {
 <AppPreloader :isLoading="isLoading" />
 div(class="h-full w-full" :class="isLoading == true ? 'blur-lg':''")
 	<AppHeader/>
-	<RouterView />
+	<RouterView/>
 </template>

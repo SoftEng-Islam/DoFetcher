@@ -30,6 +30,7 @@ table {
 	border: 1px solid yellow;
 	border-radius: 10px;
 	padding: 5px;
+
 	td {
 		background-color: rgb(53, 55, 61);
 		text-align: center;
@@ -40,10 +41,12 @@ table {
 		cursor: pointer;
 		transition-duration: 0.2s;
 	}
+
 	td:hover {
 		transform: scale(0.8);
 	}
 }
+
 .active {
 	background-color: red !important;
 }

@@ -45,8 +45,8 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 error when starting dev server:
 Error: Port 1420 is already in use
 
-lsof -i :1420
-kill -9 [PID of the process]
-kill -9 44612
-lsof -i :1420
+sudo lsof -i :1420
+sudo kill -9 [PID of the process]
+sudo kill -9 44612
+sudo lsof -i :1420
 pnpm run tauri dev
